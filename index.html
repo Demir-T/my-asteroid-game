@@ -7,20 +7,98 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Question 1 -->
-  <div id="question1" class="question" style="display:block;">
-    <h2>Asteroid Outside</h2>
-    <img src="images/mete.png" alt="Asteroid" width="300">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SpbnCe_i090" 
-      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-      encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p>You see an asteroid outside of your classroom. What are you gonna do?</p>
-    <button onclick="doStay()">Stay</button>
-    <button onclick="doGoOutside()">Go Outside</button>
-  </div>
 
-  <!-- Diğer sahneler (question2…question12) buraya aynı formatta eklenir -->
-  
-  <script src="game.js"></script>
+<!-- Question 1 -->
+<div id="question1" class="question" style="display:block;">
+  <h2>Asteroid Outside</h2>
+  <p>You see an asteroid outside of your classroom. What are you gonna do?</p>
+  <button onclick="doStay()">Stay</button>
+  <button onclick="doGoOutside()">Go Outside</button>
+</div>
+
+<!-- Question 2 -->
+<div id="question2" class="question" style="display:none;">
+  <h2>Staying</h2>
+  <p>You see sparkles outside your classroom. What are you gonna do?</p>
+  <button onclick="doStayAgain()">Stay Again</button>
+  <button onclick="doGoCheck()">Go Check</button>
+</div>
+
+<!-- Question 3 -->
+<div id="question3" class="question" style="display:none;">
+  <h2>The End! Staying Ending</h2>
+  <p>Robots took over the world! You should have checked outside.</p>
+  <button onclick="doGoBack()">Go Back</button>
+</div>
+
+<!-- Question 4 -->
+<div id="question4" class="question" style="display:none;">
+  <h2>Second time is the charm?</h2>
+  <p>You see a man next to a washing machine. What do you do?</p>
+  <button onclick="doAskHimIfHeNeedsHelp()">Ask Him If He Needs Help</button>
+  <button onclick="doBreakTheMachine()">Break The Machine</button>
+</div>
+
+<!-- Question 5 -->
+<div id="question5" class="question" style="display:none;">
+  <h2>The End! Stabbed Ending</h2>
+  <p>You got stabbed by the man. Seems like that washing machine was important.</p>
+  <button onclick="doGoBackToStart()">Go Back To Start</button>
+</div>
+
+<!-- Question 6 -->
+<div id="question6" class="question" style="display:none;">
+  <h2>The End! Saved the World Ending</h2>
+  <p>You broke the machine and saved the world!</p>
+  <button onclick="doBackToStart()">Back To Start</button>
+</div>
+
+<!-- Question 7 -->
+<div id="question7" class="question" style="display:none;">
+  <h2>Mysterious Machine</h2>
+  <p>You see a mysterious machine. What do you do?</p>
+  <button onclick="doOpenTheMachine()">Open The Machine</button>
+  <button onclick="doBreakTheMachineWithoutChecking()">Break The Machine Without Checking</button>
+</div>
+
+<!-- Question 8 -->
+<div id="question8" class="question" style="display:none;">
+  <h2>Inside The Machine</h2>
+  <p>You see 3 buttons: Negative Fifty Million, 1994, and 2700. Which one should you press?</p>
+  <button onclick="doNegativeFiftyMillion()">Negative Fifty Million</button>
+  <button onclick="doNineteenNinetyfour()">Nineteen Ninety Four</button>
+  <button onclick="doTwothousandSevenhundred()">Two Thousand Seven Hundred</button>
+  <button onclick="doSecretButtonD()">Secret Button D</button>
+</div>
+
+<!-- Question 9 -->
+<div id="question9" class="question" style="display:none;">
+  <h2>The End! Back To Dinosaur Time</h2>
+  <p>The dinosaurs attacked you at negative fifty million! That was a time machine.</p>
+  <button onclick="doGoToTheStart()">Go To The Start</button>
+</div>
+
+<!-- Question 10 -->
+<div id="question10" class="question" style="display:none;">
+  <h2>The End! Time Saved Ending</h2>
+  <p>You saved the timeline before the time machine was built.</p>
+  <button onclick="doBackToTheStart()">Back To The Start</button>
+</div>
+
+<!-- Question 11 -->
+<div id="question11" class="question" style="display:none;">
+  <h2>The End! Burned Ending</h2>
+  <p>You burned to death. World doesn’t exist in 2700.</p>
+  <button onclick="doBackToTheFirstQuestion()">Back To The First Question</button>
+</div>
+
+<!-- Question 12 -->
+<div id="question12" class="question" style="display:none;">
+  <h2>The End! Break The Machine For Good</h2>
+  <p>You broke the machine safely and avoided danger.</p>
+  <button onclick="doGoBackToTheFirstQuestion()">Go Back To The First Question</button>
+</div>
+
+<script src="game.js"></script>
 </body>
 </html>
